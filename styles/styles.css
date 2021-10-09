@@ -1320,6 +1320,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1349,7 +1350,7 @@ a {
   font-size: 57px;
   line-height: 67px;
   text-shadow: 0px 4px 30px #000000;
-  position: absolute;
+  
 }
 
 .promociones__button {
@@ -1361,14 +1362,12 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 6px 12px;
-  position: absolute;
   background-color: #F3EFEE;
   font-family: 'Glacial Indifference', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
-  margin-top: 6.5rem;
   top: 60%;
   color: #545454;
   text-decoration: none;
@@ -1448,7 +1447,6 @@ a {
   font-size: 64px;
   line-height: 75px;
   text-shadow: 0px 4px 30px #000000;
-  position: absolute;
   margin-bottom: 2rem;
 }
 
@@ -1461,7 +1459,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 6px 12px;
-  position: absolute;
   background-color: #F3EFEE;
   font-family: 'Glacial Indifference', sans-serif !important;
   font-style: normal;
@@ -2055,17 +2052,26 @@ a {
     background-image: url("../images/promociones1280.jpg");
     margin-top: 8%;
   }
-  .mainPromociones h1 {
-    margin-top: -7%;
-  }
   .promociones__button {
-    margin-top: 5%;
+    margin-top: 0;
   }
   .corporativo-container {
     margin-top: 8% !important;
   }
   .corporativo__button {
     margin-top: 5%;
+  }
+}
+
+@media (max-width: 884px) {
+  .corporativo__button {
+    margin-top: 7%;
+  }
+}
+
+@media (max-width: 835px) {
+  .corporativo__button {
+    margin-top: 8%;
   }
 }
 
@@ -2103,11 +2109,8 @@ a {
     background-image: url("../images/promociones540.jpg");
     margin-top: 18%;
   }
-  .mainPromociones h1 {
-    margin-top: -15%;
-  }
   .promociones__button {
-    margin-top: 14%;
+    margin-top: 3%;
   }
   .corporativo-container {
     margin-top: 17% !important;
@@ -2123,16 +2126,20 @@ a {
   }
 }
 
+@media (max-width: 428px) {
+  .corporativo__button {
+    margin-top: 14%;
+  }
+}
+
 @media (max-width: 420px) {
   .mainPromociones {
     background-image: url("../images/promociones420.jpg");
     margin-top: 23%;
   }
-  .mainPromociones h1 {
-    margin-top: -20%;
-  }
+ 
   .promociones__button {
-    margin-top: 15%;
+    margin-top: 4%;
   }
   .corporativo-container {
     margin-top: 24% !important;
@@ -2148,6 +2155,12 @@ a {
   }
 }
 
+@media (max-width: 395px) {
+  .corporativo__button {
+    margin-top: 14%;
+  }
+}
+
 @media (max-width: 380px) {
   .mainPromociones {
     background-image: url("../images/promociones360.jpg");
@@ -2155,10 +2168,9 @@ a {
   }
   .mainPromociones h1 {
     font-size: 40px;
-    margin-top: -20%;
   }
   .promociones__button {
-    margin-top: 15%;
+    margin-top: 2%;
   }
   .corporativo-container {
     margin-top: 26% !important;
@@ -2184,10 +2196,9 @@ a {
   }
   .mainPromociones h1 {
     font-size: 35px;
-    margin-top: -20%;
   }
   .promociones__button {
-    margin-top: 18%;
+    margin-top: 1%;
   }
   .corporativo-container {
     margin-top: 27% !important;
@@ -2204,17 +2215,22 @@ a {
   }
 }
 
+@media (max-width: 320px) {
+  .corporativo__button {
+    margin-top: 14%;
+  }
+}
+
 @media (max-width: 285px) {
   .mainPromociones {
     background-image: url("../images/promociones280.jpg");
     margin-top: 35%;
   }
   .mainPromociones h1 {
-    margin-top: -20%;
     font-size: 32px;
   }
   .promociones__button {
-    margin-top: 32%;
+    margin-top: 1%;
     font-size: 18px;
   }
   .corporativo-container {
@@ -2243,4 +2259,5 @@ a {
     margin: 0 2px !important;
   }
 }
+ 
 /*# sourceMappingURL=styles.css.map */
